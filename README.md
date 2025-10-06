@@ -1,4 +1,4 @@
 # To do
 
-[ ] Finish kilo
-[ ] Videos lecture SICP
+- [ ] Finish kilo
+- [ ] Videos lecture SICP
