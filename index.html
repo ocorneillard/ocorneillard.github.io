@@ -6,8 +6,33 @@
     <title>Dorian</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
+    <h2>Are we useless yet?</h2>
+    <h4>Current struggle with learning C</h4>
+    <p>
+        Thinking imperatively is a thing of the past. However, the limit imposed upon software seem to be directly related to the work previously done by programmers in C and to understand the current struggle surrounding memory leak/adoption of new language, it's worth having a decent knowledge of the pitfall in C. Knowing the problem to be fixed before using the appropriate tool to address the so called problem.
+    </p>
+    <p>
+        C is a call-by-value language ; when you provide an argument to a function, the value of that argument is copied into a distinct variable for use within the function. Coming from Javascript, or any higher level language, and  it's a new paradigm to understand, because it's possible to optimize something that was given for free earlier, but to be honest, it should be done by the compiler and focusing on Big O to understand the speed of algorithm is probably better. Yet I still want to learn C.
+        <pre>
+            #include &lt;stdio.h&gt;
+            
+            void swap(int *pvar, *pvar1) {
+                int swp = *pvar;
+                *pvar = pvar1;
+                *pvar1 = swp;
+            }
+
+
+            int main(void) {
+                int var = 23;
+                int var1 = 10;
+                
+                swap(&var, &var1);
+                printf("var = %d, var2 = %d\n", var, var1);
+                return 0;
+            }
+        </pre>
+    The end goal seem obfuscated. I'm more enclined to think about the "what's happening behind the swap function" than the swap function itself. It's like you have a function named swap, but the work behind the scene is done by dereferencing, and I'm tempted to see it as imperative instead of a basic lisp function where you can clearly see in your mind the structure of the paradigm in use.
+    </p>
 </body>
 </html>
